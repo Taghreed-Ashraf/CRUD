@@ -1,0 +1,85 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #F8F9FA;
+}
+
+header {
+  font-family: 'Lobster', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 33px 0;
+  color: #515153;
+  font-size: 50px;
+}
+
+header i {
+  margin-right: 10px;
+}
+
+table {
+  border-collapse : unset;
+}
+
+#deletAll {
+  cursor: pointer;
+}
+
+.top-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: 515153;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:568px)
+{
+  #top {
+    width: 90% !important;
+  }
+
+  header {
+    font-size: 25px;
+  }
+
+  #search {
+    width: 80% !important;
+  }
+
+  #productSearch {
+    width: 100% !important;
+  }
+
+  .space {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  table {
+    padding: 0 5px !important;
+  }
+
+  td button {
+    padding: 5px 2px !important;
+    margin: 0 5px!important;
+  }
+
+  .table>:not(caption)>*>* {
+    padding: 0 !important;
+  }
+
+  table th {
+    font-size: 13px !important;
+    padding: 0 !important;
+    
+  }
+}
+
+.color {
+  background-color: rgb(236, 109, 109);
+}

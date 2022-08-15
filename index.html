@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>CRUD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="keywords" content=""> 
+  <meta name="description" content="">  
+  <meta name="author" content="Taghreed Ashraf"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+</head>
+<body>
+
+  <header>
+    <i class="fab fa-cuttlefish"></i>
+    <i class="far fa-registered"></i>
+    <i class="fab fa-uniregistry"></i>
+    <i class="fab fa-dyalog"></i>
+    <span>SYSTEM</span>
+  </header>
+
+<section id="top" class="shadow w-75 m-auto rounded-">
+  <div class="bg-light my-3 p-5 rounded-3">
+    <div class="text-center">
+
+    <div class="mb-3">
+      <label class="mb-2" for="productName">Product Name<span class="text-danger">*</span></label>
+      <input type="text" id="productName" class="form-control"/>
+      <div class="text-danger d-none mt-2" id="alertName">
+        <p>Product Name must start with capital letter and contains minimum 3 letters, Can't contain special characters </p>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="mb-2" for="productPrice">Product Price<span class="text-danger">*</span></label>
+      <input type="text" id="productPrice" class="form-control"/>
+      <div class="text-danger d-none mt-2" id="alertprice">
+        <p>Product Price must be in range 100 : 100,000 (Numbers Only)</p>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="mb-2" for="productCategory">Product Category<span class="text-danger">*</span></label>
+      <input type="text" id="productCategory" class="form-control"/>
+      <div class="text-danger d-none mt-2" id="alertCategory">
+        <p>Product Category must contain minimum 5 letters, Can't contain special characters</p>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="mb-2" for="productDescription">Product Description<span class="text-danger">*</span></label>
+      <textarea id="productDescription" cols="30" rows="4"  class="form-control"></textarea>
+      <div class="text-danger d-none mt-2" id="alertDesc">
+        <p>Product Category must contain minimum 5 letters, Can't contain special characters</p>
+      </div>
+    </div>
+
+      <p id="emptyAlert" class="d-none text-danger">Please Enter all Data.</p>
+
+    <div class="btn-group mt-2">
+      <button id="addBtn" type="button" class="btn btn-success btn-sm rounded-2 mx-2">
+        Add Product
+      </button>
+      <button id="updateBtn" type="button" class="btn btn-warning btn-sm rounded-2 mx-2 d-none">
+      Update Product
+      </button>
+      <button id="clearForm" type="button" class="btn btn-secondary btn-sm rounded-2 mx-2">
+        Clear
+      </button>
+    </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<div id="search" class="w-75 m-auto">
+  <input type="search" id="productSearch" class="form-control form-control-sm my-5 w-50 mx-auto border-primary" placeholder="search..."/>
+</div>
+
+<section class="shadow container rounded-3 space py-4 my-3 ">
+
+  <table class="table text-center table-hover mt-4">
+    <div class="w-75 mx-auto d-flex justify-content-between">
+      <p>Total : <span id="allProduct" class="bg-info px-2 rounded-3 h5">0</span></p>
+      <p><i class="fa-solid fa-trash-can fa-2x text-danger" id="deletAll"></i></p>
+    </div>
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Action</th>
+    </thead>
+    <tbody id="tableBody">
+  
+    </tbody>
+  </table>
+
+</section>
+
+
+<div class="top-btn">
+  <a href="#top" class="text-decoration-none text-white">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+</div>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
